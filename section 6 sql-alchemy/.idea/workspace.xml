@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f787e342-61f6-4e75-84bf-dfc33a6570f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/section 6 sql-alchemy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/models/item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/models/store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/resources/item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/resources/store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/resources/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section 5 sql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/code/data.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/data.db" beforeDir="false" />
-    </list>
+    <list default="true" id="f787e342-61f6-4e75-84bf-dfc33a6570f4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
