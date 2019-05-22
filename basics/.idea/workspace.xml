@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="525984a1-677f-4b0f-b807-ddc7844b87e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section 5 sql/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section 5 sql/code/create_tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section 5 sql/code/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../section 5 sql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section 5 sql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/code/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../section 5 sql/code/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/code/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/../section 5 sql/code/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/code/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/../section 5 sql/code/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section 5 sql/data.db" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic_flask_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state>
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -47,9 +38,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="877" />
+    <option name="width" value="1310" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -135,10 +126,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="877" height="1047" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1310" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24910608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16430818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -160,7 +150,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/basic_flask_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state>
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
