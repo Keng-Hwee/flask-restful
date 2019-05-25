@@ -14,13 +14,20 @@ class StoreModel(db.Model):
         self.name = name
 
     def json(self):
-        return {'name': self.name,
-                'items': [item.json() for item in self.items.all()]}  # call a query here to get the items object
+        return {
+            'id': self.id,
+            'name': self.name,
+            'items': [item.json() for item in self.items.all()]
+        }  # call a query here to get the items object
 
     @classmethod
     def find_by_name(cls, name):
         # SELECT * FROM __tablename__ WHERE name = name
         return cls.query.filter_by(name=name).first()  # returns an ItemModel object
+
+    @classmethod
+    def find_all(cls):
+        return cls.query.all()
 
     # Either add the data to db or update the data if it exists
     def save_to_db(self):
