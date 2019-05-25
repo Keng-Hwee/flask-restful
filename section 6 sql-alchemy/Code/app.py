@@ -22,13 +22,21 @@ def create_tables():
 app.config['JWT_SECRET_KEY'] = 'kh'
 jwt = JWTManager(app)  # creates a new endpoint: /auth
 
+
+@jwt.user_claims_loader
+def add_claims_to_jwt(identity):
+    if identity == 1:  # Instead of hard-coding, you should be reading from a config file or a database
+        return {'is_admin': True}
+    return {'is_admin': False}
+
+
 api.add_resource(Store, '/store/<string:name>')
 api.add_resource(StoreList, '/stores')
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
 api.add_resource(UserRegister, '/register')
 api.add_resource(User, '/user/<int:user_id>')
-api.add_resource(UserLogin, '/auth')
+api.add_resource(UserLogin, '/login')
 
 if __name__ == '__main__':
     from db import db
