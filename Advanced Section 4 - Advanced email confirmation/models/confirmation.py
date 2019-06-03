@@ -1,21 +1,20 @@
-from uuid import uuid4
 from time import time
+from uuid import uuid4
 
 from db import db
 
-CONFIRMATION_EXPIRATION_DELTA = 1800  # 30 MINS
+CONFIRMATION_EXPIRATION_DELTA = 1800  # 30 minutes
 
 
 class ConfirmationModel(db.Model):
     __tablename__ = "confirmations"
 
-    id = db.Column(db.String(80), primary_key=True)
+    id = db.Column(db.String(50), primary_key=True)
     expire_at = db.Column(db.Integer, nullable=False)
     confirmed = db.Column(db.Boolean, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     user = db.relationship("UserModel")
 
-    # we set up the model such that it must expect user_id. The rest is optional
     def __init__(self, user_id: int, **kwargs):
         super().__init__(**kwargs)
         self.user_id = user_id
@@ -31,7 +30,7 @@ class ConfirmationModel(db.Model):
     def expired(self) -> bool:
         return time() > self.expire_at
 
-    def force_to_expire(self) -> None:
+    def force_to_expire(self) -> None:  # forcing current confirmation to expire
         if not self.expired:
             self.expire_at = int(time())
             self.save_to_db()

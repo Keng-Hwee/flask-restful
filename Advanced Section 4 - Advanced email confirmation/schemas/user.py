@@ -1,5 +1,6 @@
-from ma import ma
 from marshmallow import pre_dump
+
+from ma import ma
 from models.user import UserModel
 
 
@@ -9,8 +10,7 @@ class UserSchema(ma.ModelSchema):
         load_only = ("password",)
         dump_only = ("id", "confirmation")
 
-    # this is to exclude old expired confirmations in our db
-    @pre_dump
-    def _pre_dump(self, user: UserModel):
-        user.confirmation = [user.most_recent_confirmation]
-        return user
+        @pre_dump
+        def _pre_dump(self, user: UserModel):
+            user.confirmation = [user.most_recent_confirmation]
+            return user
