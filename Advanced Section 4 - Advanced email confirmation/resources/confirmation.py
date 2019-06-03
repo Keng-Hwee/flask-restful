@@ -18,6 +18,7 @@ ALREADY_CONFIRMED = "Registration has already been confirmed."
 RESEND_FAIL = "Internal server error, failed to resend confirmation email."
 RESEND_SUCCESSFUL = "E-mail confirmation successfully resent."
 
+
 class Confirmation(Resource):
     @classmethod
     def get(cls, confirmation_id: str):
@@ -33,11 +34,11 @@ class Confirmation(Resource):
         confirmation.confirmed = True
         confirmation.save_to_db()
 
-        headers = {'Content-Type': 'text/html'}
+        headers = {"Content-Type": "text/html"}
         return make_response(
             render_template("confirmation_path.html", email=confirmation.user.email),
             200,
-            headers
+            headers,
         )
 
 
@@ -51,13 +52,13 @@ class ConfirmationByUser(Resource):
 
         return (
             {
-                'current_time': int(time()),
-                'confirmation': [
+                "current_time": int(time()),
+                "confirmation": [
                     confirmation_schema.dump(each)
                     for each in user.confirmation.order_by(ConfirmationModel.expire_at)
-                ]
+                ],
             },
-            200
+            200,
         )
 
     @classmethod
@@ -82,5 +83,4 @@ class ConfirmationByUser(Resource):
             return {"message": str(e)}, 500
         except:
             traceback.print_exc()
-            return {'message': RESEND_FAIL}, 500
-
+            return {"message": RESEND_FAIL}, 500
